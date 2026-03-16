@@ -1,0 +1,74 @@
+Place için POST örneği (URL: http://localhost:8080/place/add)
+  {
+  "building": "A Blok",
+  "floor": "2",
+  "room": "201",
+  "seat": 25
+  }
+  {
+    "building": "B Blok",
+    "floor": "3",
+    "room": "301",
+    "seat": 30
+  }
+  {
+    "building": "C Blok",
+    "floor": "1",
+    "room": "101",
+    "seat": 20
+  }
+
+
+
+-------------------------------------------------------------------------------
+Student için POST örneği (URL: http://localhost:8080/student/add)
+{
+  "name": "Ahmet Kaya",
+  "department": "Bilgisayar Mühendisliği"
+}
+{
+  "name": "Ayşe Demir",
+  "department": "Elektrik Mühendisliği"
+}
+{
+  "name": "Mehmet Öz",
+  "department": "Makine Mühendisliği"
+}
+
+
+------------------------------------------------------------------------------------
+Reservation için POST örneği (URL: http://localhost:8080/reservation/add)
+
+{
+  "date": "2026-03-16T14:00:00",
+  "duration": "2026-03-16T15:30:00",
+  "isReserved": true,
+  "student": {
+    "id": 1
+  },
+  "place": {
+    "id": 1
+  }
+}
+{
+  "date": "2026-03-17T09:00:00",
+  "duration": "2026-03-17T10:00:00",
+  "isReserved": false,
+  "student": {
+    "id": 2
+  },
+  "place": {
+    "id": 2
+  }
+}
+{
+  "date": "2026-03-18T16:00:00",
+  "duration": "2026-03-18T17:00:00",
+  "isReserved": true,
+  "student": {
+    "id": 3
+  },
+  "place": {
+    "id": 3
+  }
+}
